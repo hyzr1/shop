@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+.env*.local
+.DS_Store
+*.log
+.vscode/
+.idea/
+output/
+coverage/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Local assistant tooling
+.claude/
+.codex/
+.chatgpt/
+.mcp.json
+CLAUDE.md
+CHATGPT.md
+AGENTS.md
+docs/superpowers/

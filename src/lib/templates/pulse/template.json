@@ -1,0 +1,405 @@
+{
+  "id": "pulse",
+  "name": "Pulse",
+  "theme": {
+    "colors": {
+      "schemes": {
+        "scheme_1": { "background": "#ffffff", "text": "#0b0b12", "accent": "#6366f1", "button": "#0b0b12", "button_text": "#ffffff" },
+        "scheme_2": { "background": "#0b0b12", "text": "#ffffff", "accent": "#a5b4fc", "button": "#ffffff", "button_text": "#0b0b12" }
+      }
+    },
+    "typography": { "heading_font": { "family": "Inter", "weight": 700 }, "body_font": { "family": "Inter", "weight": 400 }, "heading_scale": 1, "body_scale": 1 },
+    "spacing": { "section_padding": "large", "container_width": 1200 },
+    "buttons": { "radius": "md", "weight": "medium" }
+  },
+  "pages": {
+    "home": {
+      "page_type": "home",
+      "title": "Home",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_search": false, "show_cart": false, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Product", "url": "#" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Features", "url": "#features" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Pricing", "url": "#pricing" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Customers", "url": "#testimonials" } },
+          { "id": "b_l5", "type": "menu-link", "settings": { "label": "Docs", "url": "#" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "#", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Get started", "link": "#", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_hero", "type": "hero-mockup", "settings": {
+          "pill_tag": "NEW",
+          "pill_text": "Pulse v2 is here — see what’s new",
+          "note": "No credit card required · Free 30-day trial · Cancel anytime",
+          "color_scheme": "scheme_1",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "hm_h", "type": "heading", "settings": { "text_before": "Ship", "highlight": "faster", "text_after": "than ever." } },
+          { "id": "hm_s", "type": "subheading", "settings": { "text": "The all-in-one platform for modern teams to plan, build, and launch — with the speed your roadmap deserves." } },
+          { "id": "hm_b1", "type": "button", "settings": { "label": "Start for free", "link": "#", "style": "primary" } },
+          { "id": "hm_b2", "type": "button", "settings": { "label": "Book a demo", "link": "#", "style": "ghost" } }
+        ], "disabled": false },
+
+        { "id": "sec_logos", "type": "logo-list", "settings": {
+          "heading_text": "Trusted by fast-moving teams at",
+          "color_scheme": "scheme_1",
+          "section_padding": "small",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "lg1", "type": "logo-name", "settings": { "name": "Northwind" } },
+          { "id": "lg2", "type": "logo-name", "settings": { "name": "Vela" } },
+          { "id": "lg3", "type": "logo-name", "settings": { "name": "Loop" } },
+          { "id": "lg4", "type": "logo-name", "settings": { "name": "Cartwheel" } },
+          { "id": "lg5", "type": "logo-name", "settings": { "name": "Mast" } },
+          { "id": "lg6", "type": "logo-name", "settings": { "name": "Beacon" } }
+        ], "disabled": false },
+
+        { "id": "sec_feat", "type": "icon-features-grid", "settings": {
+          "eyebrow_text": "Everything you need",
+          "eyebrow_icon": "sparkles",
+          "heading": "One platform. Every workflow.",
+          "lede": "Replace a dozen disconnected tools with a single source of truth your whole team will love.",
+          "columns": 3,
+          "color_scheme": "scheme_1",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "ft1", "type": "feature", "settings": { "icon": "workflow", "heading": "Visual workflows", "body": "Design and automate any process with a drag-and-drop builder — no code required." } },
+          { "id": "ft2", "type": "feature", "settings": { "icon": "bar-chart", "heading": "Live analytics", "body": "Real-time dashboards that turn raw activity into decisions your team can act on." } },
+          { "id": "ft3", "type": "feature", "settings": { "icon": "git-branch", "heading": "Native integrations", "body": "Connect the 100+ tools you already use in a click. Two-way sync, always on." } },
+          { "id": "ft4", "type": "feature", "settings": { "icon": "shield", "heading": "Enterprise security", "body": "SOC 2 Type II, SSO/SAML, and granular roles — secure by default." } },
+          { "id": "ft5", "type": "feature", "settings": { "icon": "boxes", "heading": "Unlimited workspaces", "body": "Spin up a space for every team, client, or project with shared context." } },
+          { "id": "ft6", "type": "feature", "settings": { "icon": "bell", "heading": "Smart alerts", "body": "Get notified the moment something needs you — never a second sooner." } }
+        ], "disabled": false },
+
+        { "id": "sec_split", "type": "split-with-checks", "settings": {
+          "eyebrow_text": "Built for momentum",
+          "eyebrow_icon": "workflow",
+          "heading": "Automate the busywork, keep the focus.",
+          "lede": "Pulse handles the handoffs, reminders, and reporting so your team can spend time on the work that matters.",
+          "media_position": "left",
+          "color_scheme": "scheme_1",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "ck1", "type": "check", "settings": { "heading": "Triggers & automations", "body": "If-this-then-that flows across every tool you use." } },
+          { "id": "ck2", "type": "check", "settings": { "heading": "Real-time collaboration", "body": "Comments, mentions, and presence baked into everything." } },
+          { "id": "ck3", "type": "check", "settings": { "heading": "One-click reporting", "body": "Share live dashboards with a link — always up to date." } }
+        ], "disabled": false },
+
+        { "id": "sec_stats", "type": "stats", "settings": { "color_scheme": "scheme_2", "section_padding": "large", "container_width": "normal" }, "blocks": [
+          { "id": "st1", "type": "stat", "settings": { "number": "40%", "label": "Faster cycle time" } },
+          { "id": "st2", "type": "stat", "settings": { "number": "12k+", "label": "Teams onboarded" } },
+          { "id": "st3", "type": "stat", "settings": { "number": "99.99%", "label": "Uptime SLA" } },
+          { "id": "st4", "type": "stat", "settings": { "number": "4.9/5", "label": "Average rating" } }
+        ], "disabled": false },
+
+        { "id": "sec_price", "type": "pricing", "settings": {
+          "eyebrow_text": "Simple pricing",
+          "eyebrow_icon": "bar-chart",
+          "heading": "Plans that scale with you.",
+          "lede": "Start free. Upgrade when you’re ready. No surprises.",
+          "color_scheme": "scheme_1",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "pr1", "type": "tier", "settings": { "plan_name": "Starter", "price": "$0", "price_period": "/mo", "description": "For individuals getting started.", "features_text": "Up to 3 projects\nCommunity support\n1 GB storage", "cta_label": "Start free", "cta_link": "#", "featured": false } },
+          { "id": "pr2", "type": "tier", "settings": { "plan_name": "Pro", "price": "$20", "price_period": "/mo", "description": "For growing teams that ship fast.", "features_text": "Unlimited projects\nLive analytics\nPriority support\n100 GB storage", "cta_label": "Start free trial", "cta_link": "#", "featured": true } },
+          { "id": "pr3", "type": "tier", "settings": { "plan_name": "Scale", "price": "$60", "price_period": "/mo", "description": "For organizations at scale.", "features_text": "Everything in Pro\nSSO & SAML\nAudit logs\nDedicated CSM", "cta_label": "Contact sales", "cta_link": "#", "featured": false } }
+        ], "disabled": false },
+
+        { "id": "sec_test", "type": "testimonials", "settings": {
+          "eyebrow_text": "Loved by teams",
+          "eyebrow_icon": "zap",
+          "heading": "Don’t take our word for it.",
+          "color_scheme": "scheme_1",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "tq1", "type": "quote", "settings": { "text": "Pulse replaced four tools for us. Our cycle time dropped 40% in the first month.", "name": "Lena Park", "role": "VP Eng, Northwind" } },
+          { "id": "tq2", "type": "quote", "settings": { "text": "The cleanest product analytics I’ve used. Onboarding took ten minutes.", "name": "Marcus Hale", "role": "Founder, Vela" } },
+          { "id": "tq3", "type": "quote", "settings": { "text": "Finally a platform our whole company actually wants to use.", "name": "Priya Raman", "role": "COO, Loop" } },
+          { "id": "tq4", "type": "quote", "settings": { "text": "We shipped our roadmap a quarter early. Pulse paid for itself instantly.", "name": "Tom Becker", "role": "PM, Cartwheel" } },
+          { "id": "tq5", "type": "quote", "settings": { "text": "Support is unreal, and the API is a joy. Rare combination.", "name": "Sofia Ruiz", "role": "CTO, Mast" } },
+          { "id": "tq6", "type": "quote", "settings": { "text": "The dashboards alone changed how our leadership makes decisions.", "name": "Dan Whitfield", "role": "Head of Ops, Beacon" } }
+        ], "disabled": false },
+
+        { "id": "sec_cta", "type": "cta-banner", "settings": {
+          "heading": "Ready to move faster?",
+          "lede": "Join 12,000+ teams shipping better work with Pulse. Free for 30 days.",
+          "color_scheme": "scheme_2",
+          "section_padding": "large",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "cb1", "type": "button", "settings": { "label": "Get started free", "link": "#", "style": "primary" } },
+          { "id": "cb2", "type": "button", "settings": { "label": "Talk to sales", "link": "#", "style": "ghost" } }
+        ], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "The all-in-one platform for modern teams to plan, build, and ship — faster than ever." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Product", "links_text": "Features | #features\nIntegrations | #\nPricing | #pricing\nChangelog | /pages/changelog" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nBlog | /pages/blog\nCareers | /pages/careers\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Resources", "links_text": "Docs | /pages/docs\nAPI | /pages/api\nStatus | /pages/status\nCommunity | /pages/community" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nSecurity | /security" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "product": {
+      "page_type": "product",
+      "title": "Product",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_search": false, "show_cart": true, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Shop", "url": "/collections/all" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Apparel", "url": "/collections/apparel" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Accessories", "url": "/collections/accessories" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/pages/journal" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "/account", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Cart", "link": "/cart", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_pp", "type": "pulse-product", "settings": {
+          "layout": "left-image",
+          "gallery_style": "carousel",
+          "show_breadcrumb": true,
+          "breadcrumb": "Shop / Apparel / Classic tee",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "ppt", "type": "title", "settings": {} },
+          { "id": "ppp", "type": "price", "settings": {} },
+          { "id": "ppd", "type": "description", "settings": {} },
+          { "id": "ppv", "type": "variant-picker", "settings": {} },
+          { "id": "ppq", "type": "quantity", "settings": {} },
+          { "id": "ppbb", "type": "buy-button", "settings": {} },
+          { "id": "ppship", "type": "shipping-note", "settings": { "text": "Free shipping on orders over $50. 30-day returns, no questions asked." } },
+          { "id": "ppshare", "type": "share", "settings": {} }
+        ], "disabled": false },
+
+        { "id": "sec_ptest", "type": "testimonials", "settings": {
+          "eyebrow_text": "Loved by customers",
+          "eyebrow_icon": "zap",
+          "heading": "What people are saying.",
+          "color_scheme": "scheme_1",
+          "section_padding": "medium",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "ptq1", "type": "quote", "settings": { "text": "Quality I expected from something twice the price. I’ll be ordering again.", "name": "Maya Holt", "role": "Verified buyer" } },
+          { "id": "ptq2", "type": "quote", "settings": { "text": "Arrived in two days and looks even better in person. Highly recommend.", "name": "Jordan Reyes", "role": "Verified buyer" } },
+          { "id": "ptq3", "type": "quote", "settings": { "text": "The fit and feel is spot on — exactly what the description promised.", "name": "Sam Whitford", "role": "Verified buyer" } }
+        ], "disabled": false },
+
+        { "id": "sec_pcta", "type": "cta-banner", "settings": {
+          "heading": "Ready to make it yours?",
+          "lede": "Free shipping, 30-day returns, and a 1-year guarantee on every order.",
+          "color_scheme": "scheme_2",
+          "section_padding": "medium",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "pcb1", "type": "button", "settings": { "label": "Add to cart", "link": "/cart", "style": "primary" } },
+          { "id": "pcb2", "type": "button", "settings": { "label": "View details", "link": "#", "style": "ghost" } }
+        ], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "Modern essentials. Designed once, made to last." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Shop", "links_text": "All products | /collections/all\nApparel | /collections/apparel\nAccessories | /collections/accessories\nGift cards | /products/gift-card" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Help", "links_text": "Shipping | /pages/shipping\nReturns | /pages/returns\nSize guide | /pages/size-guide\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nJournal | /pages/journal\nCareers | /pages/careers\nPress | /pages/press" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nAccessibility | /accessibility" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "collection": {
+      "page_type": "collection",
+      "title": "Collection",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_cart": true, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Shop", "url": "/collections/all" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Apparel", "url": "/collections/apparel" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Accessories", "url": "/collections/accessories" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/pages/journal" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "/account", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Cart", "link": "/cart", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_cpb", "type": "pulse-page-banner", "settings": {
+          "breadcrumb": "Shop / Apparel",
+          "pill_tag": "NEW",
+          "pill_text": "Spring drop just landed",
+          "heading": "Apparel essentials.",
+          "subheading": "Soft, ethically-made layers built around your everyday.",
+          "show_search": false,
+          "search_placeholder": "Search products…",
+          "align": "center",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_cg", "type": "pulse-collection-grid", "settings": {
+          "columns": "4",
+          "card_style": "soft",
+          "show_filters": true,
+          "show_count": true,
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_ccta", "type": "cta-banner", "settings": {
+          "heading": "Stay in the loop.",
+          "lede": "Get first access to new drops, restocks, and member-only offers.",
+          "color_scheme": "scheme_2",
+          "section_padding": "medium",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "ccb1", "type": "button", "settings": { "label": "Join the list", "link": "#", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "Modern essentials. Designed once, made to last." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Shop", "links_text": "All products | /collections/all\nApparel | /collections/apparel\nAccessories | /collections/accessories\nGift cards | /products/gift-card" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Help", "links_text": "Shipping | /pages/shipping\nReturns | /pages/returns\nSize guide | /pages/size-guide\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nJournal | /pages/journal\nCareers | /pages/careers\nPress | /pages/press" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nAccessibility | /accessibility" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "collection_list": {
+      "page_type": "collection_list",
+      "title": "Collections",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_cart": true, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Shop", "url": "/collections/all" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Apparel", "url": "/collections/apparel" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Accessories", "url": "/collections/accessories" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/pages/journal" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "/account", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Cart", "link": "/cart", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_clpb", "type": "pulse-page-banner", "settings": {
+          "breadcrumb": "Shop / Collections",
+          "pill_tag": "",
+          "pill_text": "",
+          "heading": "Every collection. One place.",
+          "subheading": "Browse every category — from everyday essentials to limited-edition drops.",
+          "show_search": true,
+          "search_placeholder": "Search the store…",
+          "align": "center",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_cl", "type": "collection-list", "settings": { "heading": "All collections", "color_scheme": "scheme_1" }, "blocks": [], "disabled": false },
+
+        { "id": "sec_clcta", "type": "cta-banner", "settings": {
+          "heading": "Can’t find what you need?",
+          "lede": "Our team curates new collections every month — tell us what you’re looking for.",
+          "color_scheme": "scheme_2",
+          "section_padding": "medium",
+          "container_width": "normal"
+        }, "blocks": [
+          { "id": "clcb1", "type": "button", "settings": { "label": "Contact us", "link": "#", "style": "primary" } },
+          { "id": "clcb2", "type": "button", "settings": { "label": "Join the list", "link": "#", "style": "ghost" } }
+        ], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "Modern essentials. Designed once, made to last." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Shop", "links_text": "All products | /collections/all\nApparel | /collections/apparel\nAccessories | /collections/accessories\nGift cards | /products/gift-card" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Help", "links_text": "Shipping | /pages/shipping\nReturns | /pages/returns\nSize guide | /pages/size-guide\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nJournal | /pages/journal\nCareers | /pages/careers\nPress | /pages/press" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nAccessibility | /accessibility" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "cart": {
+      "page_type": "cart",
+      "title": "Cart",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_cart": true, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Shop", "url": "/collections/all" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Apparel", "url": "/collections/apparel" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Accessories", "url": "/collections/accessories" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/pages/journal" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "/account", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Cart", "link": "/cart", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_ca", "type": "pulse-cart", "settings": {
+          "heading": "Your cart",
+          "continue_label": "Continue shopping",
+          "continue_url": "/collections/all",
+          "checkout_label": "Checkout securely",
+          "show_promo": true,
+          "shipping_note": "Shipping & taxes calculated at checkout",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "Modern essentials. Designed once, made to last." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Shop", "links_text": "All products | /collections/all\nApparel | /collections/apparel\nAccessories | /collections/accessories\nGift cards | /products/gift-card" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Help", "links_text": "Shipping | /pages/shipping\nReturns | /pages/returns\nSize guide | /pages/size-guide\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nJournal | /pages/journal\nCareers | /pages/careers\nPress | /pages/press" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nAccessibility | /accessibility" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "search": {
+      "page_type": "search",
+      "title": "Search",
+      "sections": [
+        { "id": "sec_h", "type": "header", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "sticky": true, "show_cart": true, "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "b_l1", "type": "menu-link", "settings": { "label": "Shop", "url": "/collections/all" } },
+          { "id": "b_l2", "type": "menu-link", "settings": { "label": "Apparel", "url": "/collections/apparel" } },
+          { "id": "b_l3", "type": "menu-link", "settings": { "label": "Accessories", "url": "/collections/accessories" } },
+          { "id": "b_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/pages/journal" } },
+          { "id": "b_a1", "type": "action-button", "settings": { "label": "Sign in", "link": "/account", "style": "ghost" } },
+          { "id": "b_a2", "type": "action-button", "settings": { "label": "Cart", "link": "/cart", "style": "primary" } }
+        ], "disabled": false },
+
+        { "id": "sec_spb", "type": "pulse-page-banner", "settings": {
+          "breadcrumb": "Shop / Search",
+          "pill_tag": "",
+          "pill_text": "",
+          "heading": "Find what you’re after.",
+          "subheading": "Search the full catalog — products, collections, and journal articles.",
+          "show_search": false,
+          "search_placeholder": "Search…",
+          "align": "center",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_se", "type": "pulse-search", "settings": {
+          "placeholder": "Search products, collections, articles…",
+          "initial_query": "tee",
+          "popular_searches": "denim · tee · accessories · canvas · belt",
+          "empty_heading": "No results yet",
+          "empty_body": "Try a different keyword or browse the latest drops.",
+          "columns": "4",
+          "color_scheme": "scheme_1",
+          "container_width": "normal"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "sec_f", "type": "footer", "settings": { "copyright": "© 2026 Pulse, Inc. · Built on Hyzr", "color_scheme": "scheme_1" }, "blocks": [
+          { "id": "fbrand", "type": "brand", "settings": { "brand_text": "Pulse", "brand_icon": "zap", "tagline": "Modern essentials. Designed once, made to last." } },
+          { "id": "fl1", "type": "link-list", "settings": { "heading": "Shop", "links_text": "All products | /collections/all\nApparel | /collections/apparel\nAccessories | /collections/accessories\nGift cards | /products/gift-card" } },
+          { "id": "fl2", "type": "link-list", "settings": { "heading": "Help", "links_text": "Shipping | /pages/shipping\nReturns | /pages/returns\nSize guide | /pages/size-guide\nContact | /pages/contact" } },
+          { "id": "fl3", "type": "link-list", "settings": { "heading": "Company", "links_text": "About | /pages/about\nJournal | /pages/journal\nCareers | /pages/careers\nPress | /pages/press" } },
+          { "id": "fsoc", "type": "social-icons", "settings": { "twitter": "https://twitter.com", "instagram": "https://instagram.com", "facebook": "https://facebook.com" } },
+          { "id": "fbot", "type": "bottom-links", "settings": { "links_text": "Privacy | /privacy\nTerms | /terms\nAccessibility | /accessibility" } }
+        ], "disabled": false }
+      ]
+    }
+  }
+}

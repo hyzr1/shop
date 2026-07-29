@@ -1,0 +1,372 @@
+{
+  "id": "atlas",
+  "name": "Atlas",
+  "theme": {
+    "colors": {
+      "schemes": {
+        "scheme_1": { "background": "#e8dfd2", "text": "#171411", "accent": "#a65e40", "button": "#171411", "button_text": "#e8dfd2" },
+        "scheme_2": { "background": "#171411", "text": "#e8dfd2", "accent": "#a65e40", "button": "#e8dfd2", "button_text": "#171411" },
+        "scheme_3": { "background": "#211b17", "text": "#e8dfd2", "accent": "#a65e40", "button": "#e8dfd2", "button_text": "#171411" },
+        "scheme_4": { "background": "#a65e40", "text": "#171411", "accent": "#171411", "button": "#171411", "button_text": "#e8dfd2" }
+      }
+    },
+    "typography": {
+      "heading_font": { "family": "Instrument Serif", "weight": 400 },
+      "body_font": { "family": "Geist", "weight": 400 },
+      "heading_scale": 1,
+      "body_scale": 1
+    },
+    "spacing": { "section_padding": "large", "container_width": 1280 },
+    "buttons": { "radius": "none", "weight": "medium" }
+  },
+  "pages": {
+    "home": {
+      "page_type": "home",
+      "title": "Home",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_hero", "type": "atlas-hero", "settings": {
+          "image": { "url": "/templates/atlas-hero.webp" },
+          "topline_left": "Architecture / Interiors / Landscape",
+          "topline_link_label": "Start a project",
+          "topline_link_url": "#contact",
+          "eyebrow_icon": "compass",
+          "eyebrow_text": "Studio for grounded modern spaces",
+          "heading_line1": "Buildings that listen",
+          "heading_line2": "to the land.",
+          "lede": "Atlas designs quiet, exacting places where material, light, and landscape become one continuous experience.",
+          "index_label": "Current feature",
+          "index_title": "Mesa House",
+          "index_body": "A desert residence shaped by shade, thermal mass, and the long line of the horizon.",
+          "index_cta_label": "View case study",
+          "index_cta_url": "#work"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_work", "type": "atlas-project-grid", "settings": {
+          "header_label": "01 / Selected work",
+          "heading_line1": "Precise forms,",
+          "heading_line2": "quiet materials."
+        }, "blocks": [
+          { "id": "atlas_p1", "type": "project", "settings": { "name": "Mesa House", "place": "Joshua Tree, CA", "type_label": "Residential / 2026", "tone": "rust" } },
+          { "id": "atlas_p2", "type": "project", "settings": { "name": "Courtyard Works", "place": "Marfa, TX", "type_label": "Hospitality / 2025", "tone": "tan" } },
+          { "id": "atlas_p3", "type": "project", "settings": { "name": "Low Archive", "place": "Taos, NM", "type_label": "Cultural / 2024", "tone": "stone" } }
+        ], "disabled": false },
+
+        { "id": "atlas_method", "type": "atlas-method", "settings": {
+          "header_label": "02 / Method",
+          "heading_line1": "We start with forces,",
+          "heading_line2": "not finishes.",
+          "lede": "Sun, wind, slope, access, memory, and maintenance shape the work before style enters the conversation.",
+          "accent_color": "#a65e40",
+          "background_color": "#e8dfd2",
+          "text_color": "#171411"
+        }, "blocks": [
+          { "id": "atlas_m1", "type": "method-item", "settings": { "number": "01", "heading": "Site readings", "body": "Environmental constraints become design tools." } },
+          { "id": "atlas_m2", "type": "method-item", "settings": { "number": "02", "heading": "Material studies", "body": "Local texture, weathering, and thermal behavior guide the palette." } },
+          { "id": "atlas_m3", "type": "method-item", "settings": { "number": "03", "heading": "Spatial edits", "body": "Every line earns its place through use, light, and movement." } },
+          { "id": "atlas_m4", "type": "method-item", "settings": { "number": "04", "heading": "Long stewardship", "body": "The building is detailed for the decades after opening day." } }
+        ], "disabled": false },
+
+        { "id": "atlas_studio", "type": "atlas-studio", "settings": {
+          "icon": "grid",
+          "heading_line1": "Small studio.",
+          "heading_line2": "Long attention.",
+          "body": "We take on a limited number of projects each year so senior designers stay close to the work from first walk-through to final detail.",
+          "icon_color": "#a65e40",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_s1", "type": "stat-text", "settings": { "text": "18 built projects" } },
+          { "id": "atlas_s2", "type": "stat-text", "settings": { "text": "6 climate zones" } },
+          { "id": "atlas_s3", "type": "stat-text", "settings": { "text": "4 active sites" } },
+          { "id": "atlas_s4", "type": "stat-text", "settings": { "text": "0 generic details" } }
+        ], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "#top",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    },
+
+    "product": {
+      "page_type": "product",
+      "title": "Product",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "/#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "/#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "/#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "/#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_p_pb", "type": "atlas-page-banner", "settings": {
+          "numbered_label": "04 / Object",
+          "heading_line1": "Studio object,",
+          "heading_line2": "documented.",
+          "lede": "Each piece is photographed, dimensioned, and detailed for the long term.",
+          "meta_left": "Object · One of a series",
+          "meta_right": "Catalogued · 2026",
+          "background_color": "#211b17",
+          "scheme": "dark"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_pp", "type": "atlas-product", "settings": {
+          "layout": "left-image",
+          "gallery_style": "art",
+          "tone": "rust",
+          "show_breadcrumb": true,
+          "breadcrumb": "04 / Index / Object",
+          "background_color": "#211b17"
+        }, "blocks": [
+          { "id": "atpt", "type": "title", "settings": {} },
+          { "id": "atpp", "type": "price", "settings": {} },
+          { "id": "atpd", "type": "description", "settings": {} },
+          { "id": "atpv", "type": "variant-picker", "settings": {} },
+          { "id": "atpq", "type": "quantity", "settings": {} },
+          { "id": "atpbb", "type": "buy-button", "settings": {} },
+          { "id": "atpship", "type": "shipping-note", "settings": { "text": "Hand-finished in studio. Allow 14 days for fabrication and inspection." } },
+          { "id": "atpshare", "type": "share", "settings": {} }
+        ], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "/#contact",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    },
+
+    "collection": {
+      "page_type": "collection",
+      "title": "Collection",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "/#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "/#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "/#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "/#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_c_pb", "type": "atlas-page-banner", "settings": {
+          "numbered_label": "02 / Collection",
+          "heading_line1": "Selected works,",
+          "heading_line2": "carefully shown.",
+          "lede": "A working catalogue of finished objects — sorted by material, season, and site.",
+          "meta_left": "Sorted · by material",
+          "meta_right": "Live · 18 indexed",
+          "background_color": "#211b17",
+          "scheme": "dark"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_cg", "type": "atlas-collection-grid", "settings": {
+          "columns": "3",
+          "card_style": "tone",
+          "show_filters": true,
+          "background_color": "#211b17"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "/#contact",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    },
+
+    "collection_list": {
+      "page_type": "collection_list",
+      "title": "Collections",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "/#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "/#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "/#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "/#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_cl_pb", "type": "atlas-page-banner", "settings": {
+          "numbered_label": "03 / Index",
+          "heading_line1": "Every site,",
+          "heading_line2": "every study.",
+          "lede": "The full directory of our collections — residential, cultural, hospitality, and furniture.",
+          "meta_left": "Index · 12 sets",
+          "meta_right": "Updated · seasonally",
+          "background_color": "#211b17",
+          "scheme": "dark"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_cl", "type": "atlas-collection-list", "settings": {
+          "numbered_label": "06 / Sets",
+          "heading_line1": "Every site,",
+          "heading_line2": "every study.",
+          "lede": "The working directory of our collections — residential, cultural, hospitality, and furniture.",
+          "card_style": "tone",
+          "columns": "3",
+          "background_color": "#211b17"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "/#contact",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    },
+
+    "cart": {
+      "page_type": "cart",
+      "title": "Cart",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "/#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "/#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "/#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "/#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_ca", "type": "atlas-cart", "settings": {
+          "heading": "The bag.",
+          "subheading": "Objects awaiting acquisition. Each is fabricated to order.",
+          "continue_label": "Return to index",
+          "continue_url": "/collections/all",
+          "checkout_label": "Acquire all",
+          "note_left": "Lead time",
+          "note_right": "Fabrication begins on confirmation. Allow 10–14 days before shipping.",
+          "background_color": "#211b17"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "/#contact",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    },
+
+    "search": {
+      "page_type": "search",
+      "title": "Search",
+      "sections": [
+        { "id": "atlas_rail", "type": "atlas-rail-nav", "settings": {
+          "brand_text": "ATLAS",
+          "bottom_label": "Selected works / 18",
+          "background_opacity": 0.78,
+          "border_color": "rgba(232,223,210,.18)",
+          "background_color": "#171411",
+          "text_color": "#e8dfd2"
+        }, "blocks": [
+          { "id": "atlas_rl1", "type": "rail-link", "settings": { "label": "Work", "url": "/#work" } },
+          { "id": "atlas_rl2", "type": "rail-link", "settings": { "label": "Method", "url": "/#method" } },
+          { "id": "atlas_rl3", "type": "rail-link", "settings": { "label": "Studio", "url": "/#studio" } },
+          { "id": "atlas_rl4", "type": "rail-link", "settings": { "label": "Contact", "url": "/#contact" } }
+        ], "disabled": false },
+
+        { "id": "atlas_s_pb", "type": "atlas-page-banner", "settings": {
+          "numbered_label": "07 / Search",
+          "heading_line1": "Find the place,",
+          "heading_line2": "find the form.",
+          "lede": "Filed by site, season, and material.",
+          "meta_left": "Search · live",
+          "meta_right": "Index · 24 objects",
+          "background_color": "#211b17",
+          "scheme": "dark"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_se", "type": "atlas-search", "settings": {
+          "placeholder": "Search the index…",
+          "initial_query": "mesa",
+          "popular_searches": "mesa · courtyard · low archive · plate",
+          "empty_heading": "/ Nothing indexed.",
+          "empty_body": "Try another keyword. The index is filed by site, season, and material.",
+          "columns": "3",
+          "background_color": "#211b17"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "atlas_final", "type": "atlas-final-cta", "settings": {
+          "icon": "circle",
+          "heading_line1": "Bring us the site.",
+          "heading_line2": "We will find the architecture.",
+          "cta_label": "Begin a conversation",
+          "cta_url": "/#contact",
+          "background_color": "#a65e40",
+          "text_color": "#171411",
+          "button_color": "#171411",
+          "button_text_color": "#e8dfd2"
+        }, "blocks": [], "disabled": false }
+      ]
+    }
+  }
+}

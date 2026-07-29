@@ -1,0 +1,518 @@
+{
+  "id": "olea",
+  "name": "Olea",
+  "theme": {
+    "colors": {
+      "schemes": {
+        "scheme_1": { "background": "#f4efe5", "text": "#1c2019", "accent": "#58624a", "button": "#ded4c2", "button_text": "#252b20" },
+        "scheme_2": { "background": "#253025", "text": "#ede9dc", "accent": "#afb7a2", "button": "#ede9dc", "button_text": "#253025" },
+        "scheme_3": { "background": "#3e2d24", "text": "#f0e8dc", "accent": "#c7a98d", "button": "#f0e8dc", "button_text": "#3e2d24" },
+        "scheme_4": { "background": "#1e241c", "text": "#969d8e", "accent": "#ece8dc", "button": "#ece8dc", "button_text": "#1e241c" }
+      }
+    },
+    "typography": {
+      "heading_font": { "family": "Cormorant Garamond", "weight": 500 },
+      "body_font": { "family": "Manrope", "weight": 400 },
+      "heading_scale": 1,
+      "body_scale": 1
+    },
+    "spacing": { "section_padding": "large", "container_width": 1200 },
+    "buttons": { "radius": "none", "weight": "bold" }
+  },
+  "pages": {
+    "home": {
+      "page_type": "home",
+      "title": "Home",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 0,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_hero", "type": "olea-hero", "settings": {
+          "eyebrow_text": "Botanical skin rituals",
+          "heading_before": "Skin, returned to",
+          "heading_italic": "rhythm.",
+          "heading_after": "",
+          "italic_color": "#695036",
+          "lede": "High-performance formulas rooted in Mediterranean botanicals, made slowly for skin that wants less noise.",
+          "cta_label": "Discover the collection",
+          "cta_link": "#shop",
+          "image": { "url": "/templates/olea-hero.webp" },
+          "image_caption": "The Daily Restoration Ritual",
+          "note_index": "01 / 03",
+          "note_text": "Cold-pressed olive leaf, fermented fig, and mineral-rich spring water.",
+          "left_background": "#e8dfce"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_values", "type": "olea-values", "settings": {
+          "background_color": "#f5f0e6"
+        }, "blocks": [
+          { "id": "olea_v1", "type": "value-item", "settings": { "number": "01", "heading": "Potent by nature", "body": "Clinically considered actives paired with whole-plant extracts." } },
+          { "id": "olea_v2", "type": "value-item", "settings": { "number": "02", "heading": "Made in small batches", "body": "Fresh formulas, produced close to the ingredients that inspire them." } },
+          { "id": "olea_v3", "type": "value-item", "settings": { "number": "03", "heading": "Designed to return", "body": "Refillable glass, recyclable aluminum, and nothing ornamental." } }
+        ], "disabled": false },
+
+        { "id": "olea_shop", "type": "olea-product-grid", "settings": {
+          "eyebrow": "The essentials",
+          "heading": "A ritual for every day.",
+          "link_label": "Shop all formulas",
+          "link_url": "#ritual",
+          "brand_label": "OLÉA",
+          "background_color": "#f4efe5"
+        }, "blocks": [
+          { "id": "olea_p1", "type": "product-card", "settings": { "name": "Dawn Recovery Serum", "type": "Renew + restore", "price": "$74", "tone": "clear" } },
+          { "id": "olea_p2", "type": "product-card", "settings": { "name": "Olive Barrier Cream", "type": "Nourish + protect", "price": "$58", "tone": "amber" } },
+          { "id": "olea_p3", "type": "product-card", "settings": { "name": "Fig Enzyme Veil", "type": "Refine + soften", "price": "$46", "tone": "ivory" } }
+        ], "disabled": false },
+
+        { "id": "olea_ritual", "type": "olea-ritual", "settings": {
+          "eyebrow": "The three-minute ritual",
+          "heading": "Care that follows the body's pace.",
+          "lede": "Warm the serum between your palms. Press, do not rub. Let the formula settle before sealing in moisture.",
+          "cta_label": "Build your ritual",
+          "cta_link": "#shop",
+          "image": { "url": "/templates/olea-hero.webp" },
+          "image_caption": "Evening light / olive grove, Puglia",
+          "background_color": "#253025",
+          "text_color": "#ede9dc",
+          "eyebrow_color": "#afb7a2",
+          "mute_color": "#b7bcaf"
+        }, "blocks": [
+          { "id": "olea_r1", "type": "ritual-step", "settings": { "number": "01", "heading": "Prepare", "body": "Cleanse without stripping the skin's natural oils." } },
+          { "id": "olea_r2", "type": "ritual-step", "settings": { "number": "02", "heading": "Replenish", "body": "Apply serum while the skin is still lightly damp." } },
+          { "id": "olea_r3", "type": "ritual-step", "settings": { "number": "03", "heading": "Protect", "body": "Finish with a thin veil of barrier cream." } }
+        ], "disabled": false },
+
+        { "id": "olea_story", "type": "olea-story-quote", "settings": {
+          "icon": "leaf",
+          "quote": "\"We make fewer things, with more of what the skin recognizes.\"",
+          "body": "OLÉA began between a family olive grove and a formulation studio. We pair inherited plant knowledge with modern skin science, keeping every formula purposeful, traceable, and sensorial.",
+          "cta_label": "Read our story",
+          "cta_link": "#journal",
+          "background_color": "#e4dac8"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_ing", "type": "olea-ingredients", "settings": {
+          "eyebrow": "Ingredient index",
+          "heading": "Grown with a reason.",
+          "lede": "Every ingredient earns its place through efficacy, origin, and how it feels on the skin.",
+          "background_color": "#f5f0e7"
+        }, "blocks": [
+          { "id": "olea_ing_1", "type": "ingredient", "settings": { "number": "01", "name": "Olive leaf", "use": "Antioxidant support", "origin": "Puglia", "art_style": "leaf" } },
+          { "id": "olea_ing_2", "type": "ingredient", "settings": { "number": "02", "name": "Fermented fig", "use": "Gentle renewal", "origin": "Aegean coast", "art_style": "circle" } },
+          { "id": "olea_ing_3", "type": "ingredient", "settings": { "number": "03", "name": "Rosehip seed", "use": "Barrier repair", "origin": "Atlas foothills", "art_style": "seed" } },
+          { "id": "olea_ing_4", "type": "ingredient", "settings": { "number": "04", "name": "Mineral water", "use": "Deep hydration", "origin": "Italian Alps", "art_style": "water" } }
+        ], "disabled": false },
+
+        { "id": "olea_news", "type": "olea-newsletter", "settings": {
+          "icon": "sparkles",
+          "eyebrow": "Notes from the grove",
+          "heading": "Seasonal rituals, quietly delivered.",
+          "placeholder": "Email address",
+          "button_label": "Join the journal",
+          "background_color": "#3e2d24",
+          "text_color": "#f0e8dc",
+          "icon_color": "#c7a98d",
+          "eyebrow_color": "#c7b6a4"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#stockists" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "product": {
+      "page_type": "product",
+      "title": "Product",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "/#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 0,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "/#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "/#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "/#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_pb", "type": "olea-page-banner", "settings": {
+          "eyebrow": "Apothecary",
+          "heading_before": "Daily",
+          "heading_italic": "ritual.",
+          "heading_after": "",
+          "lede": "Slow-made formulas, paired to the moments of your day.",
+          "note_index": "01 / 03",
+          "note_text": "Cold-pressed olive leaf, fermented fig, and mineral-rich spring water.",
+          "background_color": "#e8dfce",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_pp", "type": "olea-product", "settings": {
+          "layout": "left-image",
+          "gallery_style": "art",
+          "tone": "clear",
+          "brand_label": "OLÉA",
+          "show_breadcrumb": true,
+          "breadcrumb": "Formulas / Serum / Dawn Recovery",
+          "background_color": "#f4efe5",
+          "italic_color": "#695036"
+        }, "blocks": [
+          { "id": "olpt", "type": "title", "settings": {} },
+          { "id": "olpp", "type": "price", "settings": {} },
+          { "id": "olpd", "type": "description", "settings": {} },
+          { "id": "olpv", "type": "variant-picker", "settings": {} },
+          { "id": "olpq", "type": "quantity", "settings": {} },
+          { "id": "olpbb", "type": "buy-button", "settings": {} },
+          { "id": "olpship", "type": "shipping-note", "settings": { "text": "Complimentary ritual pouch on orders over $90. Refillable glass, returned to the grove." } },
+          { "id": "olpshare", "type": "share", "settings": {} }
+        ], "disabled": false },
+
+        { "id": "olea_story_p", "type": "olea-story-quote", "settings": {
+          "icon": "leaf",
+          "quote": "\"Skin care that comes from a place — and returns you to one.\"",
+          "body": "We share the grove, the lab, and the small-batch process behind every formula.",
+          "cta_label": "Read our story",
+          "cta_link": "/#journal",
+          "background_color": "#e4dac8"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_news", "type": "olea-newsletter", "settings": {
+          "icon": "sparkles",
+          "eyebrow": "Notes from the grove",
+          "heading": "Seasonal rituals, quietly delivered.",
+          "placeholder": "Email address",
+          "button_label": "Join the journal",
+          "background_color": "#3e2d24",
+          "text_color": "#f0e8dc",
+          "icon_color": "#c7a98d",
+          "eyebrow_color": "#c7b6a4"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "/#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "/#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "collection": {
+      "page_type": "collection",
+      "title": "Collection",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "/#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 0,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "/#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "/#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "/#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_c_pb", "type": "olea-page-banner", "settings": {
+          "eyebrow": "Apothecary",
+          "heading_before": "The",
+          "heading_italic": "collection.",
+          "heading_after": "",
+          "lede": "Formulas grown with intent, paired to the moments of your day.",
+          "note_index": "Browse",
+          "note_text": "Filter by ritual — morning, evening, body, or travel — to find the right form for your skin.",
+          "background_color": "#e8dfce",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_cg", "type": "olea-collection-grid", "settings": {
+          "columns": "3",
+          "card_style": "tone",
+          "show_filters": true,
+          "brand_label": "OLÉA",
+          "background_color": "#f4efe5"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_news", "type": "olea-newsletter", "settings": {
+          "icon": "sparkles",
+          "eyebrow": "Notes from the grove",
+          "heading": "Seasonal rituals, quietly delivered.",
+          "placeholder": "Email address",
+          "button_label": "Join the journal",
+          "background_color": "#3e2d24",
+          "text_color": "#f0e8dc",
+          "icon_color": "#c7a98d",
+          "eyebrow_color": "#c7b6a4"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "/#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "/#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "collection_list": {
+      "page_type": "collection_list",
+      "title": "Collections",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "/#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 0,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "/#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "/#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "/#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_cl_pb", "type": "olea-page-banner", "settings": {
+          "eyebrow": "Library",
+          "heading_before": "Every",
+          "heading_italic": "ritual.",
+          "heading_after": "",
+          "lede": "Curated edits of formulas grown with intent — from morning serums to body oils.",
+          "note_index": "Index",
+          "note_text": "Each collection is hand-picked to support a moment in your day. Tap one to explore.",
+          "background_color": "#e8dfce",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_cl", "type": "olea-collection-list", "settings": {
+          "eyebrow": "Library",
+          "heading_before": "Every",
+          "heading_italic": "collection",
+          "heading_after": "",
+          "lede": "Curated edits of formulas grown with intent — from morning serums to body oils.",
+          "card_style": "tone",
+          "columns": "3",
+          "background_color": "#f4efe5",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "/#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "/#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "cart": {
+      "page_type": "cart",
+      "title": "Cart",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "/#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 1,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "/#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "/#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "/#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_ca", "type": "olea-cart", "settings": {
+          "heading": "Your apothecary",
+          "continue_label": "Continue browsing",
+          "continue_url": "/collections/all",
+          "checkout_label": "Proceed to checkout",
+          "note_index": "A note",
+          "note_text": "Each order is hand-wrapped in linen-blend paper and tied with a sprig of dried olive.",
+          "background_color": "#f4efe5",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "/#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "/#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#" } }
+        ], "disabled": false }
+      ]
+    },
+
+    "search": {
+      "page_type": "search",
+      "title": "Search",
+      "sections": [
+        { "id": "olea_announce", "type": "olea-announcement", "settings": {
+          "text": "Complimentary ritual pouch with orders over $90",
+          "link": "",
+          "show_arrow": true,
+          "background_color": "#20251d",
+          "text_color": "#eae6da"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_header", "type": "olea-header", "settings": {
+          "brand_text": "OLÉA",
+          "brand_subtitle": "Botanical skin laboratory",
+          "eyebrow_text": "Daily rituals / Made in small batches",
+          "cta_label": "Find your ritual",
+          "cta_link": "/#ritual",
+          "show_search": true,
+          "show_bag": true,
+          "bag_count": 0,
+          "background_color": "rgba(244,239,229,.94)",
+          "text_color": "#1c2019"
+        }, "blocks": [
+          { "id": "olea_h_l1", "type": "menu-link", "settings": { "label": "Formulas", "url": "/#shop" } },
+          { "id": "olea_h_l2", "type": "menu-link", "settings": { "label": "Ritual finder", "url": "/#ritual" } },
+          { "id": "olea_h_l3", "type": "menu-link", "settings": { "label": "Ingredients", "url": "/#story" } },
+          { "id": "olea_h_l4", "type": "menu-link", "settings": { "label": "Journal", "url": "/#journal" } }
+        ], "disabled": false },
+
+        { "id": "olea_s_pb", "type": "olea-page-banner", "settings": {
+          "eyebrow": "Search",
+          "heading_before": "Find your",
+          "heading_italic": "formula.",
+          "heading_after": "",
+          "lede": "Looking for an ingredient, a ritual, or a particular bottle? Start here.",
+          "note_index": "Tip",
+          "note_text": "Our formulas are filed by ritual — try \"morning\", \"barrier\", or \"olive\".",
+          "background_color": "#e8dfce",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_se", "type": "olea-search", "settings": {
+          "placeholder": "Search the apothecary…",
+          "initial_query": "serum",
+          "popular_searches": "serum · barrier · veil · oil · tonic",
+          "empty_heading": "The shelves are quiet.",
+          "empty_body": "Try a different word. We sort our formulas by ritual, not category.",
+          "columns": "3",
+          "background_color": "#f4efe5",
+          "italic_color": "#695036"
+        }, "blocks": [], "disabled": false },
+
+        { "id": "olea_footer", "type": "olea-footer-minimal", "settings": {
+          "brand_text": "OLÉA",
+          "tagline": "Botanical skin rituals made between land and laboratory.",
+          "background_color": "#1e241c",
+          "text_color": "#969d8e",
+          "brand_color": "#ece8dc"
+        }, "blocks": [
+          { "id": "olea_f1", "type": "footer-link", "settings": { "label": "Shop", "url": "/#shop" } },
+          { "id": "olea_f2", "type": "footer-link", "settings": { "label": "Story", "url": "/#story" } },
+          { "id": "olea_f3", "type": "footer-link", "settings": { "label": "Instagram", "url": "#" } }
+        ], "disabled": false }
+      ]
+    }
+  }
+}
